@@ -91,7 +91,7 @@ def calculate_metrics_one_feature_extractor(**kwargs):
             )
 
             np.savez("tmp.npz", mu=fid_stats_1["mu"], sigma=fid_stats_1["sigma"])
-            exit(0)
+
             if featuresdict_2 is not None:
                 fid_stats_2 = fid_featuresdict_to_statistics_cached(
                     featuresdict_2, cacheable_input2_name, feat_extractor, feature_layer_fid, **kwargs
